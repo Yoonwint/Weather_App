@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- google icon link -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <!-- Style Sheet link -->
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <main id="weather-container">
+        <header class="input-container">
+            <input class="city-input" placeholder="Search City" type="text" />
+            <button class="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </header>
+
+        <section class="weather-info" style="display:none;">
+            <div class="location-date-container">
+                <div class="location">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <h3 class="country-txt">Jakarta</h3>
+                </div>
+                <h4 class="current-date-txt regular-txt">Wed, 19 Aug</h4>
+            </div>
+
+            <div class="weather-summary-container">
+                <img src="./assets/weather/clouds.svg" class="weather-summary-img">
+                <div class="weather-summary-info">
+                    <h1 class="temp-txt">29 °C</h1>
+                    <h3 class="condition-txt regular-txt">Clouds</h3>
+                </div>
+            </div>
+
+            <div class="weather-conditions-container">
+                <div class="condition-item">
+                    <span class="material-symbols-outlined">
+                        water_drop
+                    </span>
+                    <div class="condition-info">
+                        <h5 class="regular-txt">Humuidity</h5>
+                        <h5 class="humidity-value-txt">55%</h5>
+                    </div>
+                </div>
+                <div class="condition-item">
+                    <span class="material-symbols-outlined">
+                        air
+                    </span>
+                    <div class="condition-info">
+                        <h5 class="regular-txt">Wind Speed</h5>
+                        <h5 class="wind-value-txt">2 M/s</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-items-container">
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">05 Aug</h5>
+                    <img src="./assets/weather/thunderstorm.svg" alt="ThundarStorm" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">05 Aug</h5>
+                    <img src="./assets/weather/thunderstorm.svg" alt="ThundarStorm" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">05 Aug</h5>
+                    <img src="./assets/weather/thunderstorm.svg" alt="ThundarStorm" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">05 Aug</h5>
+                    <img src="./assets/weather/thunderstorm.svg" alt="ThundarStorm" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="search-city section-message">
+            <img src="./assets/message/search-city.png">
+            <div>
+                <h1>Search City</h1>
+                <h4 class="regular-txt">
+                    Find out the weather conditions of the city
+                </h4>
+            </div>        
+        </section> 
+        
+        <section class="not-found section-message" style="display:none;">
+            <img src="./assets/message/not-found.png">
+            <div>
+                <h1>Search City</h1>
+                <h4 class="regular-txt">
+                    Find out the weather conditions of the city
+                </h4>
+            </div>        
+        </section> 
+    </main>
+</body>
+
+<!-- Main JS -->
+<script src="./main.js"></script>
+
+</html>
