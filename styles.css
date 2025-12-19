@@ -179,7 +179,7 @@ body {
 } 
 .section-message img{
     height: 180px;
-    width: fit-content;
+    width: 180px;
 }
 /* Section Message End*/
 
@@ -193,3 +193,4 @@ body {
 
 }
 /* Ulities End*/
+
