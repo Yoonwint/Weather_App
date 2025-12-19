@@ -18,7 +18,7 @@ body {
 
 
 #weather-container {
-    width: 300px;
+    width: 400px;
     height: 495px;
     background:  rgba(255, 255, 255, 0.16);
     border-radius: 20px;
@@ -193,4 +193,5 @@ body {
 
 }
 /* Ulities End*/
+
 
